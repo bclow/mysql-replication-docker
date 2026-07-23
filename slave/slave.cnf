@@ -8,3 +8,4 @@ skip-slave-start = 0
 
 # 設定為唯讀，防止一般使用者在 Slave 寫入資料
 read_only = 1
+super_read_only = 1
