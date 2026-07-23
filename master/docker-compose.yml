@@ -6,8 +6,7 @@ services:
     container_name: mysql-master
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root_secure_password
-      MYSQL_DATABASE: testdb
+      MYSQL_ROOT_PASSWORD: $MYSQL_MASTER_PASS
       MYSQL_HISTFILE: /var/lib/mysql/.mysql_history
     ports:
       - "13306:3306"

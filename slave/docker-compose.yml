@@ -6,7 +6,7 @@ services:
     container_name: mysql-slave
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root_secure_password
+      MYSQL_ROOT_PASSWORD: $MYSQL_SLAVE_PASS
       MYSQL_HISTFILE: /var/lib/mysql/.mysql_history
     ports:
       - "23306:3306"
